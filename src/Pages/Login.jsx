@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./loginpages.css";
-
+import pic from "../assets/pic.png";
 const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -174,7 +174,7 @@ const Login = () => {
                     </Col>
                     <Col md={6} className="image-side">
                         <img
-                            src="src\assets\Screenshot 2025-06-04 120228.png"
+                            src={pic}
                             alt="Illustration"
                             className="login-illustration"
                         />
