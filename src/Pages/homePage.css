@@ -1,0 +1,281 @@
+
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+}
+
+.region-tabs {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #888;
+  position: relative;
+}
+
+.region-tabs button {
+  background: none;
+  border: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #888;
+  padding: 0;
+  position: relative;
+}
+
+.region-tabs .active {
+  color: #333;
+}
+
+.region-tabs .active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+}
+
+.welcome-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.welcome-title::before,
+.welcome-title::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: #333;
+}
+
+.filter-buttons .btn {
+  min-width: 80px;
+  font-weight: 500;
+}
+
+.slider-placeholder,
+.slider-frame {
+  background: #f0f0f0;
+  height: 200px;
+  border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #999;
+}
+
+.country-card {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  gap: 1rem;
+  transition: 0.3s ease;
+}
+
+.country-card:hover {
+  background-color: #f9f9f9;
+}
+
+.flag-img {
+  width: 48px;
+  height: 32px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.load-more-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .slider-placeholder,
+  .slider-frame {
+    height: 150px;
+  }
+
+  .flag-img {
+    width: 36px;
+    height: 24px;
+  }
+
+  .country-card {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .welcome-title {
+    font-size: 1.5rem;
+  }
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.region-tabs {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.region-tabs button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #888;
+  position: relative;
+  padding: 0;
+  cursor: pointer;
+}
+
+.region-tabs .active {
+  color: #333;
+}
+
+.region-tabs .active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+}
+.footer-section {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer-text {
+  color: #333;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+
+
+
+
+.top-header {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.region-tabs {
+  display: flex;
+  gap: 1rem;
+}
+
+.region-tabs button {
+  border: none;
+  background: none;
+  font-weight: 500;
+  color: #333;
+}
+
+.region-tabs button.active {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .region-tabs {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+
+  .region-tabs.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+}
+.carousel-item img {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
